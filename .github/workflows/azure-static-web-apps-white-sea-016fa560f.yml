@@ -22,13 +22,13 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: "06b55321d16ad64cf6e35a529a321ef9276bed9fe564da365c489a1d644941d73-b0b3098b-397a-4f9f-a96f-c44d497dbd2001e47333"
+          azure_static_web_apps_api_token: "5673e2ada70e826e32088d028dea4e6afd6b8b3c2b8d7d5eae4b1a477d1acd8a3-c3adf7b4-1625-497e-b37c-d32fad076d6301e47465"
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/frontend/build" # App source code path
-          api_location: "" # Api source code path - optional
+          api_location: "frontend/api" # Api source code path - optional
           config_file_location: "/frontend" # Config file location
           output_location: "/frontend" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
