@@ -40,6 +40,14 @@
           {
             "route": "/pacfiles/YKF/pacfile.pac",
             "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "frontend/api/*",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/",
+            "allowedRoles": ["authenticated"]
           }
         ],
         "mimeTypes": {
