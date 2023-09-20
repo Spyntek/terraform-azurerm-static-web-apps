@@ -1,25 +1,48 @@
 {
     "trailingSlash": "auto",
         "routes": [
-              {"route": "/pacfiles*",
-               "allowedRoles": ["authenticated"]
-            }             
-            ],          
-    
-    "navigationFallback": {
-        "rewrite": "/index.html",
-        "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
-    },
-    "globalHeaders": {
-        "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; base-uri 'none';"
-    },
-    "mimeTypes": {
-        ".pac": "application/x-ns-proxy-autoconfig"
-    },
-    "responseOverrides": {
-        "401": {
-            "rewrite": "/login",
-            "statusCode": 302
+          {
+            "route": "/pacfiles/YYC/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/YYZ/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/BHO/pacfilepac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/YUL/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/LAX/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/JFK/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/EWR/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/MAA/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/SFO/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/YKF/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          }
+        ],
+        "mimeTypes": {
+          ".pac": "application/x-ns-proxy-autoconfig"
         }
-    }
   }
