@@ -43,12 +43,9 @@
           },
           {
             "route": "frontend/api/*",
-            "allowedRoles": ["authenticated"]
-          },
-          {
-            "route": "/",
-            "allowedRoles": ["authenticated"]
-          }
+            "methods": ["PUT", "POST", "PATCH"],
+            "allowedRoles": ["administrator"]
+          }         
         ],
         "mimeTypes": {
           ".pac": "application/x-ns-proxy-autoconfig"
