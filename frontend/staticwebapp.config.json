@@ -3,43 +3,43 @@
         "routes": [
           {
             "route": "/pacfiles/YYC/pacfile.pac",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": ["anonymous"]
           },
           {
             "route": "/pacfiles/YYZ/pacfile.pac",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": ["anonymous"]
           },
           {
-            "route": "/pacfiles/BHO/pacfilepac",
-            "allowedRoles": ["authenticated"]
+            "route": "/pacfiles/BHO/pacfile.pac",
+            "allowedRoles": ["anonymous"]
           },
           {
             "route": "/pacfiles/YUL/pacfile.pac",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": ["anonymous"]
           },
           {
             "route": "/pacfiles/LAX/pacfile.pac",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": ["anonymous"]
           },
           {
             "route": "/pacfiles/JFK/pacfile.pac",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": ["anonymous"]
           },
           {
             "route": "/pacfiles/EWR/pacfile.pac",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": ["anonymous"]
           },
           {
             "route": "/pacfiles/MAA/pacfile.pac",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": ["anonymous"]
           },
           {
             "route": "/pacfiles/SFO/pacfile.pac",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": ["anonymous"]
           },
           {
             "route": "/pacfiles/YKF/pacfile.pac",
-            "allowedRoles": ["authenticated"]
+            "allowedRoles": ["anonymous"]
           }          
         ],
         "mimeTypes": {
