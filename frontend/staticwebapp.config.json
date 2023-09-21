@@ -1,49 +1,48 @@
 {
     "trailingSlash": "auto",
-    "routes": [
-        {
-            "route": "/frontend/pacfile/pacfile.pac",
+        "routes": [
+          {
+            "route": "/pacfiles/YYC/pacfile.pac",
             "allowedRoles": ["authenticated"]
-        },
-        {
-            "routes": [
-              {"route": "/output1", "serve": "/output1.html", "statusCode": 200},
-              {"route": "/output1/pacfile", "serve": "/output1.pac", "statusCode": 200},
-              {"route": "/output2", "serve": "/output2.html", "statusCode": 200},
-              {"route": "/output2/pacfile", "serve": "/output2.pac", "statusCode": 200},
-              {"route": "/output3", "serve": "/output3.html", "statusCode": 200},
-              {"route": "/output3/pacfile", "serve": "/output3.pac", "statusCode": 200},
-              {"route": "/output4", "serve": "/output4.html", "statusCode": 200},
-              {"route": "/output4/pacfile", "serve": "/output4.pac", "statusCode": 200},
-              {"route": "/output5", "serve": "/output5.html", "statusCode": 200},
-              {"route": "/output5/pacfile", "serve": "/output5.pac", "statusCode": 200},
-              {"route": "/output6", "serve": "/output6.html", "statusCode": 200},
-              {"route": "/output6/pacfile", "serve": "/output6.pac", "statusCode": 200},
-              {"route": "/output7", "serve": "/output7.html", "statusCode": 200},
-              {"route": "/output7/pacfile", "serve": "/output7.pac", "statusCode": 200},
-              {"route": "/output8", "serve": "/output8.html", "statusCode": 200},
-              {"route": "/output8/pacfile", "serve": "/output8.pac", "statusCode": 200},
-              {"route": "/output9", "serve": "/output9.html", "statusCode": 200},
-              {"route": "/output9/pacfile", "serve": "/output9.pac", "statusCode": 200},
-              {"route": "/output10","serve":"/output10.html","statusCode" :200},
-              {"route":"/output10/pacfile","serve":"/output10.pac","statusCode" :200}
-            ]
-          }
-    ],
-    "navigationFallback": {
-        "rewrite": "/index.html",
-        "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
-    },
-    "globalHeaders": {
-        "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; base-uri 'none';"
-    },
-    "mimeTypes": {
-        ".pac": "application/x-ns-proxy-autoconfig"
-    },
-    "responseOverrides": {
-        "401": {
-            "rewrite": "/login",
-            "statusCode": 302
+          },
+          {
+            "route": "/pacfiles/YYZ/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/BHO/pacfilepac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/YUL/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/LAX/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/JFK/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/EWR/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/MAA/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/SFO/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          },
+          {
+            "route": "/pacfiles/YKF/pacfile.pac",
+            "allowedRoles": ["authenticated"]
+          }          
+        ],
+        "mimeTypes": {
+          ".pac": "application/x-ns-proxy-autoconfig"
         }
-    }
   }
