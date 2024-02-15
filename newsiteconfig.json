@@ -1,0 +1,38 @@
+{
+	"XmlStorageDir": ".\\XmlStorage\\",
+	"CleanLogsFrequency": 30,
+	"DirectoriesToClean": [
+		"C:\\SITA\\Logs\\APCManagement;",
+		"C:\\SITA\\Logs\\APCManagement\\AppVersion"
+	],
+	"DataSender": {
+		"SenderQueue": {
+			"Name": "apcmgmtnew",
+			"Path": "FormatName:DIRECT=OS:AIM-CENTRAL-MQ.ADS.SITA.NET\\private$\\apcmgmtnew",
+			"IsTransactional": true
+		},
+		"AirportSchedule": {
+			"ScheduleType": "Debug",
+			"ScheduleHour": "18",
+			"ScheduleMinute": "15",
+			"ScheduleDay": ""
+		}
+	},
+	"DataReceiver": {
+		"MultiQueueReceiverCallback": {
+			"DelayTimeInSecs": 30,
+			"TimeIntervalInSecs": 300,
+			"MaxConcurrentQueueTasks": 10
+		},
+		"ReceiverQueue": [
+			{
+				"SiteCode": "VAL",
+				"ReadQueuePath": ".\\private$\\VAL-AIM-SSQUEUE"
+			},
+			{
+				"SiteCode": "VAL1",
+				"ReadQueuePath": ".\\private$\\VAL1-AIM-SSQUEUE"
+			}
+		]
+	}
+}null
